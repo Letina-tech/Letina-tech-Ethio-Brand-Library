@@ -1,0 +1,207 @@
+
+  :root{
+    --navy:#14293F;
+    --blue:#2C6088;
+    --teal:#0F9B8E;
+    --bg:#F4F6F9;
+    --surface:#FFFFFF;
+    --border:#E0E6ED;
+    --text:#1A2332;
+    --muted:#5C6B7C;
+    --radius:10px;
+    --shadow: 0 1px 2px rgba(20,41,63,0.06), 0 4px 12px rgba(20,41,63,0.05);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; padding: 0; background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.brand{font-family:sans-serif;}
+  .mono{font-family:Arial, Helvetica, sans-serif;}
+  a{color:inherit;text-decoration:none;}
+
+  /* Header */
+  /* .main-hero img{height: 80vh; width: 100%;background-repeat: no-repeat; background-size: contain;} */
+  .back-video{position: absolute; height: 100vh; width: 100%; z-index: -1; object-fit:fill;}
+  header{background:#fff;color:#fff;position:sticky;top:0;z-index:50;}
+  .header-inner{max-width:1200px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:32px;}
+  .e-brand img{min-height: 50px; width: 200px;border-radius: 25px;}
+  .e-brand img:hover{height: 60px; transition: 0.5s;}
+  .tele-brand img{min-height: 25px; width: 150px;border-radius: 25px;}
+  .zemen-brand img{height: 50px; width: 200px;border-radius: 30px;}
+  .zemen-brand img:hover{height: 40px; transition: 0.5s;}
+  
+  nav.main-nav{display:flex;gap:20px;flex:1;}
+  nav.main-nav a{padding:8px 14px;border-radius:10px;font-size:18px;font-weight:400;color:#034485;transition:background .15s, color .15s;}
+  nav.main-nav a:hover, nav.main-nav a.active{background:rgb(54, 88, 3);color:#fff;}
+
+  /* Search hero */
+  .search-hero{background:linear-gradient(180deg,var(--navy) 0%, #06f33d 60%, var(--bg) 100%);padding:36px 24px 56px;}
+  .search-hero-inner{max-width:800px;margin:0 auto;text-align:center;}
+  .search-hero h1{color:#fff;font-size:26px;margin:0 0 6px;font-weight:600;}
+  .search-hero p{color:#AFC1D2;margin:0 0 22px;font-size:14px;}
+  .search-box{position:relative;}
+  .search-box input{width:100%;padding:15px 20px 15px 48px;border-radius:10px;border:none;font-size:15px;font-family:'Inter',sans-serif;box-shadow:0 8px 24px rgba(0,0,0,0.18);outline:none;}
+  .search-box input:focus{box-shadow:0 0 0 3px rgba(15,155,142,0.45), 0 8px 24px rgba(0,0,0,0.18);}
+  .search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:16px;}
+  .search-hint{margin-top:10px;font-size:12px;color:#8FA6BA;}
+  .search-hint kbd{background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px;font-family:'IBM Plex Mono',monospace;}
+
+  main{max-width:1200px;margin:-30px auto 60px;padding:0 24px;position:relative;}
+
+  /* Results panel (shown when searching) */
+  
+  #results-panel{display:none;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 24px;margin-bottom:28px;}
+  #results-panel.show{display:block;}
+  .results-group{margin-bottom:16px;}
+  .results-group:last-child{margin-bottom:0;}
+  .results-group-title{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;margin-bottom:8px;}
+  .result-row{display:flex;align-items:center;gap:10px;padding:8px 6px;border-radius:7px;font-size:14px;text-decoration:none;color:inherit;justify-content:space-between;}
+  .result-row:hover{background:var(--bg);}
+  .result-tag{font-size:10px;padding:2px 7px;border-radius:20px;background:#EAF6F4;color:var(--teal);font-weight:600;font-family:'IBM Plex Mono',monospace;}
+  #no-results{color:var(--muted);font-size:14px;text-align:center;padding:10px;}
+
+
+  /*About page*/
+.main-about h1{color: #45c266; font-size: 40px; font-weight: 800;transition: 0.5s;}
+.main-about h1:hover{-webkit-text-stroke: 4px #07f66f; color: transparent;}
+.main-about h1{height: 100%; width: 100%; text-align: center; font-size: 3rem; animation-name: slideleft; animation-duration: 5s; animation-iteration-count: infinite;}
+@keyframes slideleft{
+    from{transform: translateX(200%)}}
+
+/* dropdown style */
+.main-dropdown{height: 350px; width: 100%; background:linear-gradient(180deg,var(--navy) 0%, #179a36 60%, var(--bg) 100%);}
+.dropdown {position: relative;margin: 87px; padding: 20px; display: inline-block;}
+/* Style the dropdown button */
+.dropbtn {background-color: #4CAF50; color: white; padding: 16px; font-size: 16px; border: none; cursor: pointer; border-radius: 15px;}
+/* Dropdown content */
+.dropdown-content {display: none; position: absolute; background-color: #f5c7c7; min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); margin-left: 130px; border-radius: 15px;border: #06f33d solid 2px;}
+/* Links inside dropdown content */
+.dropdown-content a {color: black;  padding: 12px 16px; text-decoration: none; display: block;}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #e64abaf9;
+  border-radius: 15px;
+  color: #fff;
+  border: #cff306 solid 2px;
+}
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Change background color of dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+/* Section headers */
+
+
+  .section{margin-bottom:40px;}
+  .section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:16px;}
+  .section-head h2{font-size:19px;margin:0;font-weight:600;}
+  .section-head .count{font-size:13px;color:var(--muted);font-family:'IBM Plex Mono',monospace;}
+
+  .card-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;max-width:760px;margin:0 auto;}
+
+  .tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;}
+  .tab{font-size:12.5px;padding:6px 12px;border-radius:20px;border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;font-weight:500;transition:all .15s;}
+  .tab:hover{border-color:green;color:var(--blue);color: #1af306;}
+  .tab.active{background:green;border-color:var(--navy);color:#fff;}
+
+  .doc-list{display:flex;flex-direction:column;gap:2px;}
+  .doc-item{display:flex;align-items:center;gap:14px;padding:12px 8px;border-radius:8px;cursor:pointer;transition:background .12s;color:inherit;text-decoration:none;}
+  .doc-item:hover{background:var(--bg);}
+  .doc-item:hover .doc-open{opacity:1;}
+  .doc-open{font-size:12px;color:var(--blue);font-weight:600;opacity:0;transition:opacity .12s;white-space:nowrap;flex-shrink:0;}
+  .doc-icon{width:38px;height:38px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;}
+  .doc-icon.pdf{background:#FBEAEA;color:#C24545;}
+  .doc-icon.video{background:#EAF1FB;color:var(--blue);}
+  .doc-icon.doc{background:#EAF6F4;color:var(--teal);}
+  .doc-icon.slides{background:#FBF3E7;color:#C48A2E;}
+  .doc-meta{flex:1;min-width:0;}
+  .doc-meta h4{margin:0 0 3px;font-size:14px;font-weight:600;}
+  .doc-meta p{margin:0;font-size:12px;color:var(--muted);}
+  .doc-tag{font-size:10.5px;padding:3px 8px;border-radius:20px;background:var(--bg);color:var(--muted);font-family:'IBM Plex Mono',monospace;white-space:nowrap;}
+
+  footer{text-align:center;padding:24px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--border);}
+
+  .hidden-item{display:none !important;}
+
+
+
+  /* Meadia Query */
+
+@media screen and (max-width:600px) {
+   .header-inner{
+      max-width: 1000px;
+      padding: 10px 10px;
+      gap: 2px;
+   }
+    .e-brand img{min-height: 30px; width: 100px;border-radius: 15px;}
+    .e-brand img:hover{height: 30px; transition: 0.5s;}
+    .tele-brand img{min-height: 15px; width: 100px;border-radius: 15px;}
+    .zemen-brand img{min-height: 15px; width: 100px;border-radius: 20px;}
+    .zemen-brand img:hover{height: 30px; transition: 0.5s;}
+
+    .nav.main-nav{display:flex;gap:10px;flex:1;}
+    nav.main-nav a{padding:6px 10px;border-radius:8px;font-size:15px;font-weight:400;color:#034485;transition:background .15s, color .15s;}
+    
+    .back-video{
+      height: 80vh;
+      width: 100%;
+    }
+    .main-about h1{color: #45c266; font-size: 15px; font-weight: 600;transition: 0.5s;}
+    .main-about h1:hover{-webkit-text-stroke: 2px #f60782; color: transparent;}
+    .main-about h1{height: 60%; width: 60%; text-align: center; font-size: 1rem; animation-name: slideleft; animation-duration: 5s; animation-iteration-count: infinite;
+    }
+    @keyframes slideleft{
+        from{transform: translateX(100%)}
+    }
+
+    .main-dropdown{height: 500px; width: 100%; margin-top: 0px;}
+    .dropdown {display: flex; margin: 80px; padding: 20px;margin-left: 2px;}
+    /* Style the dropdown button */
+    .dropbtn {padding: 10px; font-size: 15px; border-radius: 10px;}
+    /* Dropdown content */
+    .dropdown-content {min-width: 150px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); margin-left: 130px; border-radius: 10px;}
+    /* Links inside dropdown content */
+    .dropdown-content a {color: black;  padding: 10px 10px; text-decoration: none; display: block;}
+
+  }
+@media screen and (max-width:430px) {
+    .header-inner{
+      max-width: 600px;
+      padding: 6px 6px;
+      gap: 1px;
+   }
+    .e-brand img{min-height: 20px; width: 80px;border-radius: 10px;}
+    .e-brand img:hover{height: 20px; transition: 0.5s;}
+    .tele-brand img{min-height: 10px; width: 60px;border-radius: 10px;}
+    .zemen-brand img{min-height: 10px; width: 60px;border-radius: 10px;}
+    .zemen-brand img:hover{height: 20px; transition: 0.5s;}
+
+    .nav.main-nav{display:flex;gap:6px;flex:1;}
+    nav.main-nav a{padding:5px 8px;border-radius:6px;font-size:10px;font-weight:300;color:#034485;transition:background .15s, color .15s;}
+    
+    .back-video{
+      height: 100vh;
+      width: 100%;
+    }
+    .main-about h1{color: #45c266; font-size: 50px; font-weight: 800;transition: 0.5s;}
+    .main-about h1:hover{-webkit-text-stroke: 2px #f60782; color: transparent;}
+    .main-about h1{height: 50%; width: 50%; text-align: center; font-size: 1.3rem; animation-name: slideleft; animation-duration: 5s; animation-iteration-count: infinite;
+    }
+    @keyframes slideleft{
+        from{transform: translateX(100%)}
+    }
+
+    .main-dropdown{height: 500px; width: 100%; margin-top: 0px;}
+    .dropdown {display: flex; margin: 80px; padding: 20px;margin-left: 2px;}
+    /* Style the dropdown button */
+    .dropbtn {padding: 10px; font-size: 15px; border-radius: 10px;}
+    /* Dropdown content */
+    .dropdown-content {min-width: 150px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); margin-left: 130px; border-radius: 10px;}
+    /* Links inside dropdown content */
+    .dropdown-content a {color: black;  padding: 10px 10px; text-decoration: none; display: block;}
+
+  }
+

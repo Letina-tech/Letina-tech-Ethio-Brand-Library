@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Intranet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="e-brand"><img src="/e-b.jpg" alt=""></div>
+    <nav class="main-nav">
+      <a href="./home.html" >Home</a>
+      <a href="./brand.html" class="active">Brand-Docs</a>
+      <a href="./about.html">About</a>
+    </nav>
+    <div class="tele-brand"><img src="/Telebirr-BG.jpg" alt=""></div>
+    <div class="zemen-brand"><img src="/Zemeng-BG.jpg" alt=""></div>
+  </div>
+</header>
+
+<div class="search-hero">
+  <div class="search-hero-inner">
+    <h1>What are you looking for, Ethio-brand?</h1>
+    <p>Search documents — all in one place.</p>
+    <div class="search-box">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="global-search" placeholder="Search for a course, guide, or document..." autocomplete="off">
+    </div>
+    <div class="search-hint">Try "Onboarding", "ZemenGEBEYA", or "Telebirr"</div>
+  </div>
+</div>
+
+<main>
+
+  <div id="results-panel"></div>
+
+  <section class="section" id="learning-section" style="margin-bottom:0;">
+    <div class="card-panel">
+      <div class="section-head">
+        <h2><span style="color: darkgreen;">Ethio</span>  <span style="color:greenyellow;"> Brand </span> <span style="color: cyan;">Docs </span> </h2>
+        <span class="count" id="doc-count">— docs</span>
+      </div>
+      <div class="tabs" id="doc-tabs"></div>
+      <div class="doc-list" id="doc-list"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span style="opacity:.7"><img style="height: 70px; width: 300px;" src="/footer-BG.jpg" alt=""></span>
+ <!-- <br> ethio-Brand · Internal use only<br> -->
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
