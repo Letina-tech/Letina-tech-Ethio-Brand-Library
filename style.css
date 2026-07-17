@@ -122,9 +122,21 @@
   .doc-meta p{margin:0;font-size:12px;color:var(--muted);}
   .doc-tag{font-size:10.5px;padding:3px 8px;border-radius:20px;background:var(--bg);color:var(--muted);font-family:'IBM Plex Mono',monospace;white-space:nowrap;}
 
-  footer{text-align:center;padding:24px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--border);}
-
   .hidden-item{display:none !important;}
+
+  
+/* footer */
+.heading-title{display:flex;position: absolute; color: #8dc63f;font-size: 18px;margin-left: 20%;}
+footer{text-align:center;color:var(--muted);font-size:12.5;border-top:2px solid var(--border);}
+.footerContainer {width: 100%;padding: 0px 30px 0px;}
+.socialIcons {display: flex;justify-content: center;}
+.socialIcons a {text-decoration: none;padding: 10px;background-color: white;margin: 10px;border-radius: 50%;}
+.socialIcons a i {font-size: 2em;color:rgba(97, 206, 112, 0.9);opacity: 0, 9;}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover {background-color: rgba(30, 62, 35, 0.9);border-radius: 15px; min-height: 40px;border: 2px solid rgba(97, 206, 112, 0.9);}
+.socialIcons a:hover i {color: white;transition: 0.5s;}
+.bak-image img{display: inline-block;height: 90px; width: 500px;border-radius: 50px; margin-left: 30%; margin-top: 3px;}
 
 
 
@@ -133,13 +145,13 @@
 @media screen and (max-width:600px) {
    .header-inner{
       max-width: 1000px;
-      padding: 10px 10px;
-      gap: 2px;
+      padding: 5px 5px;
+      gap: 1px;
    }
-    .e-brand img{min-height: 30px; width: 100px;border-radius: 15px;}
+    .e-brand img{min-height: 25px; width: 80px;border-radius: 15px;}
     .e-brand img:hover{height: 30px; transition: 0.5s;}
-    .tele-brand img{min-height: 15px; width: 100px;border-radius: 15px;}
-    .zemen-brand img{min-height: 15px; width: 100px;border-radius: 20px;}
+    .tele-brand img{min-height: 5px; width: 80px;border-radius: 15px;}
+    .zemen-brand img{min-height: 2px; width: 70px;border-radius: 15px;}
     .zemen-brand img:hover{height: 30px; transition: 0.5s;}
 
     .nav.main-nav{display:flex;gap:10px;flex:1;}
@@ -166,21 +178,31 @@
     /* Links inside dropdown content */
     .dropdown-content a {color: black;  padding: 10px 10px; text-decoration: none; display: block;}
 
+   /* footer */
+    .footerContainer {width: 100%;padding: 0px 20px 0px;}
+    .socialIcons a {text-decoration: none;padding: 6px;margin: 6px;border-radius: 40%;}
+    .socialIcons a i {font-size: 1.6em;opacity: 0, 6;}
+
+    /* Hover affect on social media icon */
+    .socialIcons a:hover {background-color: rgba(30, 62, 35, 0.9);border-radius: 10px; min-height: 30px;border: 1px solid rgba(97, 206, 112, 0.9);}
+    .bak-image img{display: block;height: 40px; width: 270px;border-radius: 40px; margin-left: 27%; margin-top: 3px;}
   }
+
+
 @media screen and (max-width:430px) {
     .header-inner{
-      max-width: 600px;
-      padding: 6px 6px;
-      gap: 1px;
+      max-width: 100px;
+      margin-left: 0;
+      gap: 2;
    }
-    .e-brand img{min-height: 20px; width: 80px;border-radius: 10px;}
+    .e-brand img{min-height: 15px; width: 70px;border-radius: 10px;}
     .e-brand img:hover{height: 20px; transition: 0.5s;}
-    .tele-brand img{min-height: 10px; width: 60px;border-radius: 10px;}
-    .zemen-brand img{min-height: 10px; width: 60px;border-radius: 10px;}
+    .tele-brand img{height: 30px; width: 60px;border-radius: 10px;}
+    .zemen-brand img{height: 30px; width: 60px;border-radius: 10px;}
     .zemen-brand img:hover{height: 20px; transition: 0.5s;}
 
-    .nav.main-nav{display:flex;gap:6px;flex:1;}
-    nav.main-nav a{padding:5px 8px;border-radius:6px;font-size:10px;font-weight:300;color:#034485;transition:background .15s, color .15s;}
+    .nav.main-nav{display:flex;gap:4px;flex:1;}
+    nav.main-nav a{padding:3px 6px;border-radius:4px;font-size:8px;font-weight:200;color:#034485;transition:background .15s, color .15s;}
     
     .back-video{
       height: 100vh;
@@ -203,5 +225,14 @@
     /* Links inside dropdown content */
     .dropdown-content a {color: black;  padding: 10px 10px; text-decoration: none; display: block;}
 
+    /* footer */
+    .footerContainer {width: 100%;padding: 0px 20px 0px;}
+    .socialIcons a {text-decoration: none;padding: 6px;margin: 6px;border-radius: 40%;}
+    .socialIcons a i {font-size: 1.6em;opacity: 0, 6;}
+
+    /* Hover affect on social media icon */
+    .socialIcons a:hover {background-color: rgba(30, 62, 35, 0.9);border-radius: 10px; min-height: 30px;border: 1px solid rgba(97, 206, 112, 0.9);}
+    .bak-image img{display: block;height: 40px; width: 270px;border-radius: 40px; margin-left: 20%; margin-top: 3px;}
   }
+  
 
